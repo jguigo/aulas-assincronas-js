@@ -42,3 +42,34 @@ let textoNovoDoSpan = document.createTextNode("Nosso SPAN");
 umSpan.appendChild(textoNovoDoSpan);
 
 paiDoElementoP.replaceChild(umSpan, elementoP);
+
+
+//fazer atribuição dos nosso elementos html utilizando getAttribute e setAttribute;
+let nossoLink = document.querySelector('a');
+console.log("HREF = ", nossoLink);
+console.log("href com getAttribute", nossoLink.getAttribute('href'));
+
+nossoLink.setAttribute("href", "https://www.linkedin.com/in/guilhermef-melo/")
+
+
+//largura e altura dos elementos
+//largura e altura dos elementos
+let primeiroh1 = document.getElementById('primeiroh1');
+//client não considera as portar, apenas o elemento
+console.log('Largura:', primeiroh1.clientWidth)
+console.log('Largura:', primeiroh1.clientHeight)
+
+//offset considera as bordar pra imprimir os tamanhos
+console.log('LARGURA: ', primeiroh1.offsetWidth);
+console.log('ALTURA: ', primeiroh1.offsetHeight);
+
+//mostra mais informação sobre o elemento -> tamanho, posição etc...
+console.log(primeiroh1.getBoundingClientRect)
+
+
+//alterando elementos css com js
+setTimeout(() => {
+    primeiroh1.style.color ='green'
+    primeiroh1.style.backgroundColor ='#FFF'
+
+}, 2000);
