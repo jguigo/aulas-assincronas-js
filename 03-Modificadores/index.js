@@ -73,3 +73,6 @@ setTimeout(() => {
     primeiroh1.style.backgroundColor ='#FFF'
 
 }, 2000);
+
+let todosElementosListitem = document.querySelectorAll('li');
+console.log(todosElementosListitem);
